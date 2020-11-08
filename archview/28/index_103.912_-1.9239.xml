@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.17" showerrors="false">
+    <security>
+        <allowdomain domain="gradoskop"/>
+        <allowdomain domain="gradoskop.ru"/>
+    </security>
+
+    <events onxmlcomplete="action(hide_sound);" />
+
+    <view hlookat="103.912" vlookat="-1.9239" fov="80" fovmin="60" fovmax="120" maxpixelzoom="1.0"/>
+    <preview url="/static/upload/2011/3/tiles_28_v3/preview.jpg?v05" />
+    <image type="cube" multires="true" tilesize="512" progressive="false">
+        <level tiledimagewidth="512" tiledimageheight="512">
+        <left url="/static/upload/2011/3/tiles_28_v3/l1/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2011/3/tiles_28_v3/l1/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2011/3/tiles_28_v3/l1/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2011/3/tiles_28_v3/l1/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2011/3/tiles_28_v3/l1/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2011/3/tiles_28_v3/l1/d_%0v_%0h.jpg"/>
+        </level>
+        <level tiledimagewidth="1024" tiledimageheight="1024">
+        <left url="/static/upload/2011/3/tiles_28_v3/l2/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2011/3/tiles_28_v3/l2/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2011/3/tiles_28_v3/l2/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2011/3/tiles_28_v3/l2/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2011/3/tiles_28_v3/l2/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2011/3/tiles_28_v3/l2/d_%0v_%0h.jpg"/>
+        </level>
+        <level tiledimagewidth="2048" tiledimageheight="2048">
+        <left url="/static/upload/2011/3/tiles_28_v3/l3/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2011/3/tiles_28_v3/l3/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2011/3/tiles_28_v3/l3/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2011/3/tiles_28_v3/l3/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2011/3/tiles_28_v3/l3/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2011/3/tiles_28_v3/l3/d_%0v_%0h.jpg"/>
+        </level>
+        <mobile>
+            <cube url="/static/upload/2011/3/tiles_28_v3/mobile_%s.jpg?v05" />
+        </mobile>
+    </image>
+    <hotspot
+        name="p27_hs" style="hotspotstyle" ath="-7.03092" atv="1.38981"
+        onclick="myloadpano('p27_hs','/archview/27','-52.8206','-7.74999')"
+    />
+</krpano>

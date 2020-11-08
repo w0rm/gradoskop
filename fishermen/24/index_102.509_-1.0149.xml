@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.17" showerrors="false">
+    <security>
+        <allowdomain domain="gradoskop"/>
+        <allowdomain domain="gradoskop.ru"/>
+    </security>
+
+    <events onxmlcomplete="action(hide_sound);" />
+
+    <view hlookat="102.509" vlookat="-1.0149" fov="80" fovmin="60" fovmax="120" maxpixelzoom="1.0"/>
+    <preview url="/static/upload/2011/3/tiles_24_v1/preview.jpg?v05" />
+    <image type="cube" multires="true" tilesize="512" progressive="false">
+        <level tiledimagewidth="512" tiledimageheight="512">
+        <left url="/static/upload/2011/3/tiles_24_v1/l1/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2011/3/tiles_24_v1/l1/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2011/3/tiles_24_v1/l1/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2011/3/tiles_24_v1/l1/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2011/3/tiles_24_v1/l1/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2011/3/tiles_24_v1/l1/d_%0v_%0h.jpg"/>
+        </level>
+        <level tiledimagewidth="1024" tiledimageheight="1024">
+        <left url="/static/upload/2011/3/tiles_24_v1/l2/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2011/3/tiles_24_v1/l2/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2011/3/tiles_24_v1/l2/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2011/3/tiles_24_v1/l2/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2011/3/tiles_24_v1/l2/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2011/3/tiles_24_v1/l2/d_%0v_%0h.jpg"/>
+        </level>
+        <level tiledimagewidth="2048" tiledimageheight="2048">
+        <left url="/static/upload/2011/3/tiles_24_v1/l3/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2011/3/tiles_24_v1/l3/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2011/3/tiles_24_v1/l3/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2011/3/tiles_24_v1/l3/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2011/3/tiles_24_v1/l3/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2011/3/tiles_24_v1/l3/d_%0v_%0h.jpg"/>
+        </level>
+        <mobile>
+            <cube url="/static/upload/2011/3/tiles_24_v1/mobile_%s.jpg?v05" />
+        </mobile>
+    </image>
+    <hotspot
+        name="p23_hs" style="hotspotstyle" ath="143.663" atv="-3.00204"
+        onclick="myloadpano('p23_hs','/fishermen/23','-31.7299','-4.51492')"
+    />
+    <hotspot
+        name="p25_hs" style="hotspotstyle" ath="-69.2763" atv="-0.329303"
+        onclick="myloadpano('p25_hs','/fishermen/25','149.547','-1.0966')"
+    />
+</krpano>

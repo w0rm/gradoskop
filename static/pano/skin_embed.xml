@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.0.8" basedir="">
+    <!-- movement -->
+    <progress showload="bar(midbottom,20%,6,0,55,shaded,0xFFFFFF,0x227fcf,0x227fcf,0x227fcf,0,0x777777,0)" showwait="none"/>
+    
+    <control mousetype="moveto" mouseaccelerate="3" mousefriction="0"/>
+    <cursors url="%SWFPATH%/../../img/sprite.png?v00" type="8way"
+        move="120|144|16|16" drag="136|144|16|16"
+        arrow_u="152|144|16|16" arrow_d="168|144|16|16" arrow_l="184|144|16|16" arrow_r="200|144|16|16"
+        arrow_lu="216|144|16|16" arrow_ru="232|144|16|16" arrow_rd="248|144|16|16" arrow_ld="264|144|16|16"/>
+    <textstyle name="labelstyle" font="Arial" bold="false" alpha="1" fontsize="12" border="false" background="false" bordercolor="0x333333" backgroundcolor="0x333333" textcolor="0xffffff" origin="bottom" yoffset="60" edge="bottom"/>
+    <plugin name="soundinterface" url="%SWFPATH%/plugins/soundinterface.swf"  preload="true" rootpath="%SWFPATH%/../audio" volume="1.0" mute="false"/>
+
+    <plugin keep="true" name="in" align="bottom" x="-40" y="10"  url="%SWFPATH%/../../img/sprite.png?v00" zorder="1" crop="40|0|40|40" ondowncrop="40|40|40|40" ondown="set(fov_moveforce, +0.5);" onup="set(fov_moveforce, 0);" onhover="showtext(Отдалиться, labelstyle);"/>
+    <plugin keep="true" name="out" align="bottom"  y="10" url="%SWFPATH%/../../img/sprite.png?v00" zorder="1" crop="0|0|40|40" ondowncrop="0|40|40|40" ondown="set(fov_moveforce, -0.5);" onup="set(fov_moveforce, 0);" onhover="showtext(Приблизиться, labelstyle);"/>
+    <plugin keep="true" name="fson" align="bottom" x="40" y="10" url="%SWFPATH%/../../img/sprite.png?v00" zorder="1" crop="80|0|40|40" ondowncrop="80|40|40|40" onhover="showtext(Включить полноэкранный режим,  labelstyle);" onclick="switch(fullscreen)"/>
+    <plugin keep="true" name="fsoff" align="bottom" x="40" y="10" url="%SWFPATH%/../../img/sprite.png?v00" zorder="1" crop="120|0|40|40" ondowncrop="120|40|40|40" onhover="showtext(Выключить полноэкранный режим,  labelstyle);" onclick="switch(fullscreen)" visible="false"/>
+    <plugin keep="true" name="soundoff" align="bottom" x="120" y="10" url="%SWFPATH%/../../img/sprite.png?v00" zorder="1" crop="0|80|40|40" ondowncrop="0|120|40|40" onhover="showtext(Выключить звук,  labelstyle);" onclick="action(switch_sound)" visible="false"/>
+    <plugin keep="true" name="soundon" align="bottom" x="120" y="10" url="%SWFPATH%/../../img/sprite.png?v00" zorder="1" crop="40|80|40|40" ondowncrop="40|120|40|40" onhover="showtext(Включить звук,  labelstyle);" onclick="action(switch_sound)" visible="false"/>
+    
+    <action name="switch_sound">
+        switch(plugin[soundinterface].mute);
+        switch(plugin[soundoff].visible);
+        switch(plugin[soundon].visible);
+    </action>
+    <action name="show_sound">
+        stopallsounds();
+        if(plugin[soundinterface].mute,
+           set(plugin[soundon].visible, true);
+           set(plugin[soundoff].visible, false);
+        ,
+           set(plugin[soundon].visible, false);
+           set(plugin[soundoff].visible, true);
+        )
+    </action>
+    <action name="hide_sound">
+        stopallsounds();
+        set(plugin[soundon].visible, false);
+        set(plugin[soundoff].visible, false);    
+    </action>
+    <hotspot keep="true" name="nadirlogo"
+        url="%SWFPATH%/../../img/mark.png"
+        ath="0" atv="90" distorted="true"
+        scale="0.5" rotate="0.0"
+        onclick="openurl(http://gradoskop.ru,_self)"
+        onhover="showtext(Градоскоп — изготовление виртуальных туров, labelstyle);"
+    />
+    <contextmenu fullscreen="false">
+        <item caption="Нормальный вид" onclick="action(view_normal);"/>
+        <item caption="«Рыбий глаз»" onclick="action(view_fisheye);"/>
+        <item caption="«Маленькая планета»" onclick="action(view_littleplanet);"/>
+        <item caption="KRPANO" separator="true"/>
+    </contextmenu>
+    <events onenterfullscreen="action(switch_fullscreen);" onexitfullscreen="action(switch_fullscreen);"  />
+    <action name="switch_fullscreen">
+        if(fullscreen,
+            set(plugin[fson].visible, false);
+            set(plugin[fsoff].visible, true);
+            set(plugin[ltc].visible, false);
+            set(plugin[rtc].visible, false);
+            set(plugin[lbc].visible, false);
+            set(plugin[rbc].visible, false);
+        ,
+            set(plugin[fson].visible, true);
+            set(plugin[fsoff].visible, false);
+            set(plugin[ltc].visible, true);
+            set(plugin[rtc].visible, true);
+            set(plugin[lbc].visible, true);
+            set(plugin[rbc].visible, true);
+        );
+    </action>
+    <action name="view_normal">
+        tween(view.fovmax, 100.0, distance(179, 1.00), easeoutquad);
+        tween(view.architectural, 0.0, distance(1.0, 0.45), easeoutquad);
+        tween(view.fisheye, 0.0, distance(1.0, 0.45), easeoutquad, set(view.stereographic, false); set(display.flash10, on); );
+    </action>
+    <action name="view_fisheye">
+        set(display.flash10,off);
+        tween(view.architectural, 0.0, distance(1.0, 0.30), easeoutquad);
+        tween(view.fisheye, 0.0 , distance(1.0, 0.30), easeoutquad, set(view.stereographic,false); set(view.fovmax, 140); tween(view.fisheye, 0.35, distance(1.0, 1.25)); );
+    </action>
+    <action name="view_littleplanet">
+        set(display.flash10,off);
+        tween(view.architectural, 0.0, 0.25);
+        tween(view.vlookat, 90, distance(179, 1.50), easeoutquad);
+        set(view.stereographic, true); set(view.fovmax, 140);
+        tween(view.fisheye, 1.0, distance(1.0, 0.75), easeoutquad);
+        tween(view.fov, 140, distance(179, 0.75), easeoutquad);
+    </action>
+        
+    <action name="myloadpano">
+		looktohotspot(%1);
+		tween(hotspot.alpha, 0);
+		loadpano(%2.xml, null, MERGE, BLEND(1));
+		lookat(%3, %4 ,90);
+		tween(hotspot.alpha, 1);
+	</action>
+	
+	<style name="hotspotstyle" keep="false" url="%SWFPATH%/../../img/sprite.png?v00" crop="160|0|40|40" ondowncrop="160|40|40|40" />
+
+</krpano>

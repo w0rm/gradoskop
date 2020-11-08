@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.17" showerrors="false">
+    <security>
+        <allowdomain domain="gradoskop"/>
+        <allowdomain domain="gradoskop.ru"/>
+    </security>
+
+    <events onxmlcomplete="action(hide_sound);" />
+
+    <view hlookat="-45.0" vlookat="-31.1047" fov="80" fovmin="60" fovmax="120" maxpixelzoom="1.0"/>
+    <preview type="grid(cube,32,16,256,0xFFFFFF,0x000000);" details="8"/>
+</krpano>

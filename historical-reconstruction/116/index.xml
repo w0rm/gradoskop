@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.17" showerrors="false">
+    <security>
+        <allowdomain domain="gradoskop"/>
+        <allowdomain domain="gradoskop.ru"/>
+    </security>
+
+    <events onxmlcomplete="action(hide_sound);" />
+
+    <view hlookat="0.0" vlookat="0.0" fov="80" fovmin="60" fovmax="120" maxpixelzoom="1.0"/>
+    <preview url="/static/upload/2012/5/tiles_116_v1/preview.jpg?v05" />
+    <image type="cube" multires="true" tilesize="512" progressive="false">
+        <level tiledimagewidth="512" tiledimageheight="512">
+        <left url="/static/upload/2012/5/tiles_116_v1/l1/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2012/5/tiles_116_v1/l1/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2012/5/tiles_116_v1/l1/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2012/5/tiles_116_v1/l1/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2012/5/tiles_116_v1/l1/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2012/5/tiles_116_v1/l1/d_%0v_%0h.jpg"/>
+        </level>
+        <level tiledimagewidth="1024" tiledimageheight="1024">
+        <left url="/static/upload/2012/5/tiles_116_v1/l2/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2012/5/tiles_116_v1/l2/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2012/5/tiles_116_v1/l2/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2012/5/tiles_116_v1/l2/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2012/5/tiles_116_v1/l2/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2012/5/tiles_116_v1/l2/d_%0v_%0h.jpg"/>
+        </level>
+        <level tiledimagewidth="2048" tiledimageheight="2048">
+        <left url="/static/upload/2012/5/tiles_116_v1/l3/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2012/5/tiles_116_v1/l3/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2012/5/tiles_116_v1/l3/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2012/5/tiles_116_v1/l3/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2012/5/tiles_116_v1/l3/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2012/5/tiles_116_v1/l3/d_%0v_%0h.jpg"/>
+        </level>
+        <mobile>
+            <cube url="/static/upload/2012/5/tiles_116_v1/mobile_%s.jpg?v05" />
+        </mobile>
+    </image>
+    <hotspot
+        name="p111_hs" style="hotspotstyle" ath="151.726" atv="11.7549"
+        onclick="myloadpano('p111_hs','/historical-reconstruction/111','-7.34396','8.28275')"
+    />
+    <hotspot
+        name="p112_hs" style="hotspotstyle" ath="198.297" atv="2.99733"
+        onclick="myloadpano('p112_hs','/historical-reconstruction/112','-57.8892','4.27776')"
+    />
+    <hotspot
+        name="p114_hs" style="hotspotstyle" ath="-50.199" atv="6.65551"
+        onclick="myloadpano('p114_hs','/historical-reconstruction/114','43.8429','27.9068')"
+    />
+    <hotspot
+        name="p115_hs" style="hotspotstyle" ath="-85.8128" atv="7.33094"
+        onclick="myloadpano('p115_hs','/historical-reconstruction/115','138.33','13.4015')"
+    />
+</krpano>

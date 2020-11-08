@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html lang="ru" class="no-js ie"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru" class="no-js"><!--<![endif]-->
+<head>
+    <!--[if lt IE 9 ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <title>Другой город — Градоскоп</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" type="image/x-icon"
+          href="/static/img/favicon.ico?v05">
+    <link rel="alternate" type="application/rss+xml" title="RSS"
+          href="http://feeds.feedburner.com/gradoskop">
+    <script src="/static/js/vendor/require.js?v05"></script>
+    <script src="/static/js/main.js?v05"></script>
+    <link rel="stylesheet" href="/static/css/style.css?v05">
+</head>
+<body>
+    <div class="wrap">
+
+        <div class="viewport" id="pano">
+    <div class="pano js-pano"></div>
+    <a href="/playground" class="prev js-link">Детская площадка в Кремлёвском парке</a>
+    <a href="/fishermen" class="next js-link">Рыбаки на Торговой стороне</a>
+</div>
+
+        <div class="layout">
+            <div class="content">
+                <div class="logo"><h1><span>Градоскоп</span><em>beta</em></h1></div>
+                <div class="ya_share"><div class="js-yashare"></div></div>
+                <h2>Другой город</h2>
+                <div class="pano_content">
+    <div class="note">
+
+    </div>
+</div>
+<div class="tour_content">
+    <div class="description">
+        <p>Мы, то есть люди, устроены так, что, увидев какое-то новое место, прежде всего стараемся его идентифицировать. Понять, в какой части города находится дом, что за церковь торчит среди зелени, а не соседская ли машина припаркована рядом? Томить не будем: Торговая сторона, ближе к конечной остановке автобусного маршрута № 13. </p>
+<p>Прогуливаясь по зелёным улочкам Торговой стороны, каждый из нас рискует попасть, или наоборот каждый из нас может быть удостоен чести попасть в совершенно другой, несовременный Великий Новгород. Где бельё и коврики сушатся прямо во дворе, где на старых, списанных из школы стульях за столом неизвестного происхождения собирается чуть ли не полдома, где по вечерам начинаются горячие разговоры, да такие, что особенно звонкие голоса допоздна слышны в прохладной зелени. А ночью прямо из этой зелени вырывается свист и щёлканье запоздавшего соловья.</p>
+<p>Впрочем, нам, жителям квартир с безлимитным Интернетом и мусоропроводом в подъезде опоэтизировать картинку середины прошлого века гораздо проще, чем её настоящим героям. К услугам последних только разбитый асфальт, местами поросший непобедимой травой, и обшарпанный подъезд  с дверью «вечно нараспашку».</p>
+<p>Ну а внутри квартир? Маленькая, но всё же вполне реальная тайна. Ведь там, где кончается общественное и доступное, начинается самое интересное, потому что тайное и настоящее.</p>
+    </div>
+</div>
+<script>
+    require(['jquery', 'views/page'], function ($, PageView) {
+        $(function () {
+            new PageView({el: 'body'}).render()
+        })
+    })
+</script>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="hr"></div>
+        <div class="layout">
+            <div class="copyright">
+                <p class="copy">
+                    © «Градоскоп»
+                    <span class="created_at" title="Дата съёмки">14 августа 2010</span>,
+                    г. Великий Новгород
+                </p>
+                <p>Интересные сюжеты в декорациях города.</p>
+            </div>
+            <div class="contacts">
+                <p><a href="mailto:info@gradoskop.ru">почта</a>, <a href="http://twitter.com/gradoskop">твиттер</a>, <a class="pano_link" href="/about">о проекте</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

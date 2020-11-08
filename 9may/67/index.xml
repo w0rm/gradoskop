@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.17" showerrors="false">
+    <security>
+        <allowdomain domain="gradoskop"/>
+        <allowdomain domain="gradoskop.ru"/>
+    </security>
+
+    <events onxmlcomplete="action(hide_sound);" />
+
+    <view hlookat="0.0" vlookat="0.0" fov="80" fovmin="60" fovmax="120" maxpixelzoom="1.0"/>
+    <preview url="/static/upload/2011/5/tiles_67_v1/preview.jpg?v05" />
+    <image type="cube" multires="true" tilesize="512" progressive="false">
+        <level tiledimagewidth="512" tiledimageheight="512">
+        <left url="/static/upload/2011/5/tiles_67_v1/l1/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2011/5/tiles_67_v1/l1/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2011/5/tiles_67_v1/l1/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2011/5/tiles_67_v1/l1/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2011/5/tiles_67_v1/l1/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2011/5/tiles_67_v1/l1/d_%0v_%0h.jpg"/>
+        </level>
+        <level tiledimagewidth="1024" tiledimageheight="1024">
+        <left url="/static/upload/2011/5/tiles_67_v1/l2/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2011/5/tiles_67_v1/l2/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2011/5/tiles_67_v1/l2/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2011/5/tiles_67_v1/l2/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2011/5/tiles_67_v1/l2/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2011/5/tiles_67_v1/l2/d_%0v_%0h.jpg"/>
+        </level>
+        <level tiledimagewidth="2048" tiledimageheight="2048">
+        <left url="/static/upload/2011/5/tiles_67_v1/l3/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2011/5/tiles_67_v1/l3/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2011/5/tiles_67_v1/l3/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2011/5/tiles_67_v1/l3/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2011/5/tiles_67_v1/l3/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2011/5/tiles_67_v1/l3/d_%0v_%0h.jpg"/>
+        </level>
+        <mobile>
+            <cube url="/static/upload/2011/5/tiles_67_v1/mobile_%s.jpg?v05" />
+        </mobile>
+    </image>
+    <events onxmlcomplete="action(show_sound);playsound(auto, 9may/crowd.mp3, 0);" />
+    <hotspot
+        name="p66_hs" style="hotspotstyle" ath="-219.656" atv="-1.12277"
+        onclick="myloadpano('p66_hs','/9may/66','161.667','1.38801')"
+    />
+    <hotspot
+        name="p69_hs" style="hotspotstyle" ath="-3.2689" atv="1.72362"
+        onclick="myloadpano('p69_hs','/9may/69','18.6814','12.8686')"
+    />
+</krpano>

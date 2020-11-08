@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.17" showerrors="false">
+    <security>
+        <allowdomain domain="gradoskop"/>
+        <allowdomain domain="gradoskop.ru"/>
+    </security>
+
+    <events onxmlcomplete="action(hide_sound);" />
+
+    <view hlookat="122.899" vlookat="4.49123" fov="80" fovmin="60" fovmax="120" maxpixelzoom="1.0"/>
+    <preview url="/static/upload/2011/4/tiles_40_v1/preview.jpg?v05" />
+    <image type="cube" multires="true" tilesize="512" progressive="false">
+        <level tiledimagewidth="512" tiledimageheight="512">
+        <left url="/static/upload/2011/4/tiles_40_v1/l1/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2011/4/tiles_40_v1/l1/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2011/4/tiles_40_v1/l1/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2011/4/tiles_40_v1/l1/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2011/4/tiles_40_v1/l1/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2011/4/tiles_40_v1/l1/d_%0v_%0h.jpg"/>
+        </level>
+        <level tiledimagewidth="1024" tiledimageheight="1024">
+        <left url="/static/upload/2011/4/tiles_40_v1/l2/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2011/4/tiles_40_v1/l2/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2011/4/tiles_40_v1/l2/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2011/4/tiles_40_v1/l2/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2011/4/tiles_40_v1/l2/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2011/4/tiles_40_v1/l2/d_%0v_%0h.jpg"/>
+        </level>
+        <level tiledimagewidth="2048" tiledimageheight="2048">
+        <left url="/static/upload/2011/4/tiles_40_v1/l3/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2011/4/tiles_40_v1/l3/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2011/4/tiles_40_v1/l3/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2011/4/tiles_40_v1/l3/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2011/4/tiles_40_v1/l3/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2011/4/tiles_40_v1/l3/d_%0v_%0h.jpg"/>
+        </level>
+        <mobile>
+            <cube url="/static/upload/2011/4/tiles_40_v1/mobile_%s.jpg?v05" />
+        </mobile>
+    </image>
+    <hotspot
+        name="p39_hs" style="hotspotstyle" ath="-15.9205" atv="2.31844"
+        onclick="myloadpano('p39_hs','/school/39','108.294','2.01945')"
+        onhover="showtext(Вернуться по коридору к кабинету биологии, labelstyle);"
+    />
+    <hotspot
+        name="p45_hs" style="hotspotstyle" ath="5.16575" atv="6.78979"
+        onclick="myloadpano('p45_hs','/school/45','-39.7769','14.8964')"
+        onhover="showtext(Класс трудов, labelstyle);"
+    />
+    <hotspot
+        name="p47_hs" style="hotspotstyle" ath="-24.1232" atv="2.66431"
+        onclick="myloadpano('p47_hs','/school/47','-306.66','11.9666')"
+        onhover="showtext(Лаборантская биологии, labelstyle);"
+    />
+    <hotspot
+        name="p49_hs" style="hotspotstyle" ath="-32.5933" atv="2.51568"
+        onclick="myloadpano('p49_hs','/school/49','-187.601','1.61844')"
+        onhover="showtext(Класс физики, labelstyle);"
+    />
+    <hotspot
+        name="p50_hs" style="hotspotstyle" ath="-456.037" atv="5.57461"
+        onclick="myloadpano('p50_hs','/school/50','89.6339','1.54971')"
+        onhover="showtext(Лаборантская физики, labelstyle);"
+    />
+</krpano>

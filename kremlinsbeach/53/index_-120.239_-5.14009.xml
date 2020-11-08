@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.17" showerrors="false">
+    <security>
+        <allowdomain domain="gradoskop"/>
+        <allowdomain domain="gradoskop.ru"/>
+    </security>
+
+    <events onxmlcomplete="action(hide_sound);" />
+
+    <view hlookat="-120.239" vlookat="-5.14009" fov="80" fovmin="60" fovmax="120" maxpixelzoom="1.0"/>
+    <preview url="/static/upload/2011/4/tiles_53_v1/preview.jpg?v05" />
+    <image type="cube" multires="true" tilesize="512" progressive="false">
+        <level tiledimagewidth="512" tiledimageheight="512">
+        <left url="/static/upload/2011/4/tiles_53_v1/l1/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2011/4/tiles_53_v1/l1/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2011/4/tiles_53_v1/l1/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2011/4/tiles_53_v1/l1/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2011/4/tiles_53_v1/l1/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2011/4/tiles_53_v1/l1/d_%0v_%0h.jpg"/>
+        </level>
+        <level tiledimagewidth="1024" tiledimageheight="1024">
+        <left url="/static/upload/2011/4/tiles_53_v1/l2/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2011/4/tiles_53_v1/l2/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2011/4/tiles_53_v1/l2/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2011/4/tiles_53_v1/l2/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2011/4/tiles_53_v1/l2/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2011/4/tiles_53_v1/l2/d_%0v_%0h.jpg"/>
+        </level>
+        <level tiledimagewidth="2048" tiledimageheight="2048">
+        <left url="/static/upload/2011/4/tiles_53_v1/l3/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2011/4/tiles_53_v1/l3/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2011/4/tiles_53_v1/l3/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2011/4/tiles_53_v1/l3/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2011/4/tiles_53_v1/l3/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2011/4/tiles_53_v1/l3/d_%0v_%0h.jpg"/>
+        </level>
+        <mobile>
+            <cube url="/static/upload/2011/4/tiles_53_v1/mobile_%s.jpg?v05" />
+        </mobile>
+    </image>
+    <hotspot
+        name="p52_hs" style="hotspotstyle" ath="-93.068" atv="-1.43714"
+        onclick="myloadpano('p52_hs','/kremlinsbeach/52','-155.098','-2.16009')"
+    />
+    <hotspot
+        name="p54_hs" style="hotspotstyle" ath="76.013" atv="-5.04806"
+        onclick="myloadpano('p54_hs','/kremlinsbeach/54','207.542','-9.09015')"
+    />
+</krpano>

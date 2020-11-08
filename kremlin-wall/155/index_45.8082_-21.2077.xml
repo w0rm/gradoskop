@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.17" showerrors="false">
+    <security>
+        <allowdomain domain="gradoskop"/>
+        <allowdomain domain="gradoskop.ru"/>
+    </security>
+
+    <events onxmlcomplete="action(hide_sound);" />
+
+    <view hlookat="45.8082" vlookat="-21.2077" fov="80" fovmin="60" fovmax="120" maxpixelzoom="1.0"/>
+    <preview url="/static/upload/2014/7/tiles_155_v1/preview.jpg?v05" />
+    <image type="cube" multires="true" tilesize="512" progressive="false">
+        <level tiledimagewidth="512" tiledimageheight="512">
+        <left url="/static/upload/2014/7/tiles_155_v1/l1/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2014/7/tiles_155_v1/l1/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2014/7/tiles_155_v1/l1/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2014/7/tiles_155_v1/l1/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2014/7/tiles_155_v1/l1/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2014/7/tiles_155_v1/l1/d_%0v_%0h.jpg"/>
+        </level>
+        <level tiledimagewidth="1024" tiledimageheight="1024">
+        <left url="/static/upload/2014/7/tiles_155_v1/l2/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2014/7/tiles_155_v1/l2/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2014/7/tiles_155_v1/l2/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2014/7/tiles_155_v1/l2/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2014/7/tiles_155_v1/l2/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2014/7/tiles_155_v1/l2/d_%0v_%0h.jpg"/>
+        </level>
+        <level tiledimagewidth="2048" tiledimageheight="2048">
+        <left url="/static/upload/2014/7/tiles_155_v1/l3/l_%0v_%0h.jpg"/>
+        <front url="/static/upload/2014/7/tiles_155_v1/l3/f_%0v_%0h.jpg"/>
+        <right url="/static/upload/2014/7/tiles_155_v1/l3/r_%0v_%0h.jpg"/>
+        <back url="/static/upload/2014/7/tiles_155_v1/l3/b_%0v_%0h.jpg"/>
+        <up url="/static/upload/2014/7/tiles_155_v1/l3/u_%0v_%0h.jpg"/>
+        <down url="/static/upload/2014/7/tiles_155_v1/l3/d_%0v_%0h.jpg"/>
+        </level>
+        <mobile>
+            <cube url="/static/upload/2014/7/tiles_155_v1/mobile_%s.jpg?v05" />
+        </mobile>
+    </image>
+    <hotspot
+        name="p170_hs" style="hotspotstyle" ath="53.228" atv="-24.309"
+        onclick="myloadpano('p170_hs','/kremlin-wall/170','42.8792','-41.6149')"
+    />
+    <hotspot
+        name="p173_hs" style="hotspotstyle" ath="111.391" atv="-10.0896"
+        onclick="myloadpano('p173_hs','/kremlin-wall/173','97.7412','2.06396')"
+    />
+</krpano>

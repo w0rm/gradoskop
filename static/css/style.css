@@ -1,0 +1,279 @@
+/* line 5, ../../templates/scss/style.scss */
+body {
+  background: #fff;
+  color: #000;
+  font-family: Georgia, serif;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 13, ../../templates/scss/style.scss */
+a {
+  color: #227fcf;
+}
+
+/* line 17, ../../templates/scss/style.scss */
+a.js {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
+/* line 22, ../../templates/scss/style.scss */
+.wrap {
+  margin: 0 auto;
+  padding: 0 100px;
+  position: relative;
+  min-width: 800px;
+  max-width: 1100px;
+}
+
+/* line 23, ../../templates/scss/style.scss */
+.clear {
+  clear: both;
+  overflow: hidden;
+  font-size: 0;
+}
+
+/* line 25, ../../templates/scss/style.scss */
+.viewport {
+  margin-top: 3.6em;
+  position: relative;
+  padding-bottom: 50%;
+}
+/* line 29, ../../templates/scss/style.scss */
+.viewport .prev,
+.viewport .next {
+  position: absolute;
+  width: 85px;
+  font-family: "PT Sans", "Arial Narrow", sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  top: 50%;
+  margin-top: -20px;
+}
+/* line 40, ../../templates/scss/style.scss */
+.viewport .prev:before,
+.viewport .prev em.b,
+.viewport .next:before,
+.viewport .next em.b {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1.2em;
+  content: "";
+  background-image: url("../img/sprite.png?1305049511");
+  background-repeat: no-repeat;
+}
+/* line 50, ../../templates/scss/style.scss */
+.viewport .prev {
+  right: 100%;
+  margin-right: 10px;
+  text-align: right;
+}
+/* line 54, ../../templates/scss/style.scss */
+.viewport .prev:before,
+.viewport .prev em.b {
+  background-position: -200px 0;
+  float: right;
+  margin-left: 40px;
+}
+/* line 59, ../../templates/scss/style.scss */
+.viewport .prev:active:before,
+.viewport .prev:active em.b {
+  background-position: -200px -40px;
+}
+/* line 63, ../../templates/scss/style.scss */
+.viewport .next {
+  left: 100%;
+  padding-left: 10px;
+}
+/* line 66, ../../templates/scss/style.scss */
+.viewport .next:before,
+.viewport .next em.b {
+  background-position: -240px 0;
+}
+/* line 70, ../../templates/scss/style.scss */
+.viewport .next:active:before,
+.viewport .next:active em.b {
+  background-position: -240px -40px;
+}
+/* line 74, ../../templates/scss/style.scss */
+.viewport object {
+  outline: none;
+}
+
+/* line 80, ../../templates/scss/style.scss */
+.layout {
+  width: 10%;
+  margin: 0 auto;
+  position: relative;
+  left: 5%;
+}
+
+/* line 84, ../../templates/scss/style.scss */
+.logo {
+  position: relative;
+  left: -50%;
+  width: 50%;
+  margin-right: -300%;
+  float: left;
+}
+/* line 90, ../../templates/scss/style.scss */
+.logo h1 {
+  font-size: 1em;
+  margin-top: 2.8em;
+  margin-left: 10px;
+  width: 160px;
+  position: relative;
+}
+/* line 96, ../../templates/scss/style.scss */
+.logo h1 span,
+.logo h1 a {
+  display: block;
+  overflow: hidden;
+  width: 160px;
+  height: 41px;
+  text-indent: -1000px;
+  background: url("../img/sprite.png?1305049511") 0 -160px no-repeat;
+}
+/* line 104, ../../templates/scss/style.scss */
+.logo h1 em {
+  position: absolute;
+  left: 100%;
+  margin-left: 3px;
+  top: 0;
+  font: italic normal 11px/1 "PT Sans", "Arial Narrow", sans-serif;
+}
+
+/* line 114, ../../templates/scss/style.scss */
+.ya_share {
+  position: relative;
+  float: right;
+  margin-left: -16.66%;
+  left: 16.66%;
+  width: 33.33%;
+  text-align: right;
+}
+/* line 121, ../../templates/scss/style.scss */
+.ya_share > div {
+  margin-right: 15px;
+  font-size: 1.4em;
+  line-height: 1.71428em;
+  margin: 2.57142em 0 0;
+  font-weight: normal;
+}
+/* line 127, ../../templates/scss/style.scss */
+.ya_share > div a.b-share__handle .b-share__text,
+.ya_share > div a.b-share__handle:hover .b-share__text {
+  font-family: "PT Sans", "Arial Narrow", sans-serif;
+  color: #227fcf;
+}
+
+/* line 134, ../../templates/scss/style.scss */
+.content {
+  position: relative;
+  float: left;
+  left: -200%;
+  width: 600%;
+  margin-right: -600%;
+  color: #000;
+}
+/* line 141, ../../templates/scss/style.scss */
+.content h2 {
+  font-size: 2.4em;
+  line-height: 1;
+  margin: 1.5em 0 1.25em 0;
+  font-weight: normal;
+  width: 83.33%;
+  margin-left: 10px;
+}
+/* line 149, ../../templates/scss/style.scss */
+.content p {
+  font-size: 1.4em;
+  line-height: 1.71428em;
+  margin: 0.8571em 0 0 10px;
+}
+
+/* line 156, ../../templates/scss/style.scss */
+.note {
+  position: relative;
+  width: 25%;
+  left: -33.33%;
+  float: left;
+  margin-right: -200%;
+  margin-top: -1.8em;
+}
+/* line 163, ../../templates/scss/style.scss */
+.note p {
+  font-family: "PT Sans", "Arial Narrow", sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 0 0 1em;
+}
+
+/* line 172, ../../templates/scss/style.scss */
+.hr {
+  clear: both;
+  margin-top: 6em;
+  margin-bottom: 1.2em;
+  height: 1em;
+  width: 100%;
+  position: relative;
+  left: -50px;
+  padding: 0 50px;
+  background: url("../img/sprite.png?1305049511") 0 -204px repeat-x;
+}
+
+/* line 184, ../../templates/scss/style.scss */
+.copyright,
+.contacts {
+  position: relative;
+  float: left;
+  padding-bottom: 4.8em;
+}
+/* line 188, ../../templates/scss/style.scss */
+.copyright p,
+.contacts p {
+  font-size: 1.4em;
+  line-height: 1.71428em;
+}
+
+/* line 194, ../../templates/scss/style.scss */
+.copyright {
+  left: -500%;
+  width: 600%;
+  margin-right: -600%;
+}
+/* line 198, ../../templates/scss/style.scss */
+.copyright p {
+  margin: 0 10px 0 1.6em;
+}
+/* line 201, ../../templates/scss/style.scss */
+.copyright .copy {
+  margin-left: 0;
+}
+
+/* line 206, ../../templates/scss/style.scss */
+.contacts {
+  left: 100%;
+  width: 400%;
+  margin-right: -400%;
+}
+/* line 210, ../../templates/scss/style.scss */
+.contacts p {
+  text-align: right;
+  margin: 0.8571em 10px 0;
+}
+
+/* line 217, ../../templates/scss/style.scss */
+.pano {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
