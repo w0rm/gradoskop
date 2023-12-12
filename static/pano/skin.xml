@@ -77,7 +77,7 @@
              url="%SWFPATH%/../img/mark.png"
              ath="0" atv="90" distorted="true"
              scale="0.5" rotate="0.0"
-             onclick="openurl(http://gradoskop.ru,_self)"
+             onclick="openurl(http://gradoskop.unsoundscapes.com,_self)"
              onhover="showtext(Градоскоп — изготовление виртуальных туров, labelstyle);"/>
 
     <contextmenu fullscreen="false">

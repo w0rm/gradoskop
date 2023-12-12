@@ -41,6 +41,7 @@ a.js {
   position: relative;
   padding-bottom: 50%;
 }
+
 /* line 29, ../../templates/scss/style.scss */
 .viewport .prev,
 .viewport .next {
@@ -55,6 +56,7 @@ a.js {
   top: 50%;
   margin-top: -20px;
 }
+
 /* line 40, ../../templates/scss/style.scss */
 .viewport .prev:before,
 .viewport .prev em.b,
@@ -68,12 +70,14 @@ a.js {
   background-image: url("../img/sprite.png?1305049511");
   background-repeat: no-repeat;
 }
+
 /* line 50, ../../templates/scss/style.scss */
 .viewport .prev {
   right: 100%;
   margin-right: 10px;
   text-align: right;
 }
+
 /* line 54, ../../templates/scss/style.scss */
 .viewport .prev:before,
 .viewport .prev em.b {
@@ -81,26 +85,31 @@ a.js {
   float: right;
   margin-left: 40px;
 }
+
 /* line 59, ../../templates/scss/style.scss */
 .viewport .prev:active:before,
 .viewport .prev:active em.b {
   background-position: -200px -40px;
 }
+
 /* line 63, ../../templates/scss/style.scss */
 .viewport .next {
   left: 100%;
   padding-left: 10px;
 }
+
 /* line 66, ../../templates/scss/style.scss */
 .viewport .next:before,
 .viewport .next em.b {
   background-position: -240px 0;
 }
+
 /* line 70, ../../templates/scss/style.scss */
 .viewport .next:active:before,
 .viewport .next:active em.b {
   background-position: -240px -40px;
 }
+
 /* line 74, ../../templates/scss/style.scss */
 .viewport object {
   outline: none;
@@ -122,6 +131,7 @@ a.js {
   margin-right: -300%;
   float: left;
 }
+
 /* line 90, ../../templates/scss/style.scss */
 .logo h1 {
   font-size: 1em;
@@ -130,6 +140,7 @@ a.js {
   width: 160px;
   position: relative;
 }
+
 /* line 96, ../../templates/scss/style.scss */
 .logo h1 span,
 .logo h1 a {
@@ -140,6 +151,7 @@ a.js {
   text-indent: -1000px;
   background: url("../img/sprite.png?1305049511") 0 -160px no-repeat;
 }
+
 /* line 104, ../../templates/scss/style.scss */
 .logo h1 em {
   position: absolute;
@@ -147,30 +159,6 @@ a.js {
   margin-left: 3px;
   top: 0;
   font: italic normal 11px/1 "PT Sans", "Arial Narrow", sans-serif;
-}
-
-/* line 114, ../../templates/scss/style.scss */
-.ya_share {
-  position: relative;
-  float: right;
-  margin-left: -16.66%;
-  left: 16.66%;
-  width: 33.33%;
-  text-align: right;
-}
-/* line 121, ../../templates/scss/style.scss */
-.ya_share > div {
-  margin-right: 15px;
-  font-size: 1.4em;
-  line-height: 1.71428em;
-  margin: 2.57142em 0 0;
-  font-weight: normal;
-}
-/* line 127, ../../templates/scss/style.scss */
-.ya_share > div a.b-share__handle .b-share__text,
-.ya_share > div a.b-share__handle:hover .b-share__text {
-  font-family: "PT Sans", "Arial Narrow", sans-serif;
-  color: #227fcf;
 }
 
 /* line 134, ../../templates/scss/style.scss */
@@ -182,6 +170,7 @@ a.js {
   margin-right: -600%;
   color: #000;
 }
+
 /* line 141, ../../templates/scss/style.scss */
 .content h2 {
   font-size: 2.4em;
@@ -191,6 +180,7 @@ a.js {
   width: 83.33%;
   margin-left: 10px;
 }
+
 /* line 149, ../../templates/scss/style.scss */
 .content p {
   font-size: 1.4em;
@@ -207,6 +197,7 @@ a.js {
   margin-right: -200%;
   margin-top: -1.8em;
 }
+
 /* line 163, ../../templates/scss/style.scss */
 .note p {
   font-family: "PT Sans", "Arial Narrow", sans-serif;
@@ -235,6 +226,7 @@ a.js {
   float: left;
   padding-bottom: 4.8em;
 }
+
 /* line 188, ../../templates/scss/style.scss */
 .copyright p,
 .contacts p {
@@ -248,10 +240,12 @@ a.js {
   width: 600%;
   margin-right: -600%;
 }
+
 /* line 198, ../../templates/scss/style.scss */
 .copyright p {
   margin: 0 10px 0 1.6em;
 }
+
 /* line 201, ../../templates/scss/style.scss */
 .copyright .copy {
   margin-left: 0;
@@ -263,6 +257,7 @@ a.js {
   width: 400%;
   margin-right: -400%;
 }
+
 /* line 210, ../../templates/scss/style.scss */
 .contacts p {
   text-align: right;

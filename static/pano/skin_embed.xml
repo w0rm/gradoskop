@@ -2,7 +2,7 @@
 <krpano version="1.0.8" basedir="">
     <!-- movement -->
     <progress showload="bar(midbottom,20%,6,0,55,shaded,0xFFFFFF,0x227fcf,0x227fcf,0x227fcf,0,0x777777,0)" showwait="none"/>
-    
+
     <control mousetype="moveto" mouseaccelerate="3" mousefriction="0"/>
     <cursors url="%SWFPATH%/../../img/sprite.png?v00" type="8way"
         move="120|144|16|16" drag="136|144|16|16"
@@ -17,7 +17,7 @@
     <plugin keep="true" name="fsoff" align="bottom" x="40" y="10" url="%SWFPATH%/../../img/sprite.png?v00" zorder="1" crop="120|0|40|40" ondowncrop="120|40|40|40" onhover="showtext(Выключить полноэкранный режим,  labelstyle);" onclick="switch(fullscreen)" visible="false"/>
     <plugin keep="true" name="soundoff" align="bottom" x="120" y="10" url="%SWFPATH%/../../img/sprite.png?v00" zorder="1" crop="0|80|40|40" ondowncrop="0|120|40|40" onhover="showtext(Выключить звук,  labelstyle);" onclick="action(switch_sound)" visible="false"/>
     <plugin keep="true" name="soundon" align="bottom" x="120" y="10" url="%SWFPATH%/../../img/sprite.png?v00" zorder="1" crop="40|80|40|40" ondowncrop="40|120|40|40" onhover="showtext(Включить звук,  labelstyle);" onclick="action(switch_sound)" visible="false"/>
-    
+
     <action name="switch_sound">
         switch(plugin[soundinterface].mute);
         switch(plugin[soundoff].visible);
@@ -36,13 +36,13 @@
     <action name="hide_sound">
         stopallsounds();
         set(plugin[soundon].visible, false);
-        set(plugin[soundoff].visible, false);    
+        set(plugin[soundoff].visible, false);
     </action>
     <hotspot keep="true" name="nadirlogo"
         url="%SWFPATH%/../../img/mark.png"
         ath="0" atv="90" distorted="true"
         scale="0.5" rotate="0.0"
-        onclick="openurl(http://gradoskop.ru,_self)"
+        onclick="openurl(http://gradoskop.unsoundscapes.com,_self)"
         onhover="showtext(Градоскоп — изготовление виртуальных туров, labelstyle);"
     />
     <contextmenu fullscreen="false">
@@ -87,7 +87,7 @@
         tween(view.fisheye, 1.0, distance(1.0, 0.75), easeoutquad);
         tween(view.fov, 140, distance(179, 0.75), easeoutquad);
     </action>
-        
+
     <action name="myloadpano">
 		looktohotspot(%1);
 		tween(hotspot.alpha, 0);
@@ -95,7 +95,7 @@
 		lookat(%3, %4 ,90);
 		tween(hotspot.alpha, 1);
 	</action>
-	
+
 	<style name="hotspotstyle" keep="false" url="%SWFPATH%/../../img/sprite.png?v00" crop="160|0|40|40" ondowncrop="160|40|40|40" />
 
 </krpano>

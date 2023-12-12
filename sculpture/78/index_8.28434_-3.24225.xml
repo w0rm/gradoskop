@@ -2,7 +2,7 @@
 <krpano version="1.17" showerrors="false">
     <security>
         <allowdomain domain="gradoskop"/>
-        <allowdomain domain="gradoskop.ru"/>
+        <allowdomain domain="gradoskop.unsoundscapes.com"/>
     </security>
 
     <events onxmlcomplete="action(hide_sound);" />
